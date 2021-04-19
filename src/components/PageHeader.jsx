@@ -9,17 +9,11 @@ export class PageHeader extends React.Component{
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-6 col-sm-6 col-4 header-top-left no-padding">
-                                <a href="index.html"><img src="img/logo.png" alt="" title=""/></a>
+                                <a href="/"><img src="img/logo.png" alt="" title=""/></a>
                             </div>
                             <div className="col-lg-6 col-sm-6 col-8 header-top-right no-padding">
-                                <a className="btns" href="tel:+953 012 3654 896">+953 012 3654 896</a>
-                                <a className="btns" href="mailto:support@colorlib.com">support@colorlib.com</a>
-                                <a className="icons" href="tel:+953 012 3654 896">
-                                    <span className="lnr lnr-phone-handset"></span>
-                                </a>
-                                <a className="icons" href="mailto:support@colorlib.com">
-                                    <span className="lnr lnr-envelope"></span>
-                                </a>
+                                <a className="btns" href="tel:+7 (34241) 3-56-56"><i className="lnr lnr-phone"/> +7 (34241) 3-56-56</a>
+                                <a className="btns" href="tel:+7 (922) 33-00-204"><i className="lnr lnr-phone-handset"/> +7 (922) 33-00-204</a>
                             </div>
                         </div>
                     </div>
@@ -28,10 +22,10 @@ export class PageHeader extends React.Component{
                     <div className="row align-items-center justify-content-between d-flex">
                         <nav id="nav-menu-container">
                             <ul className="nav-menu">
-                                <li className="menu-active"><a href="index.html">Главная</a></li>
-                                <li><a href="#">О нас</a></li>
-                                <li><a href="#">Стоматологические слуги</a></li>
-                                <li><a href="#">Прочие слуги</a></li>
+                                <li className="menu-active"><NavLink className="nav-link" to="/">Главная</NavLink></li>
+                                <li><NavLink className="nav-link" to="/aboutus">О нас</NavLink></li>
+                                <li><NavLink className="nav-link" to="/dentalservice">Стоматологические слуги</NavLink></li>
+                                <li><NavLink className="nav-link" to="/elseservice">Прочие слуги</NavLink></li>
                                 <li><NavLink className="nav-link" to="/opentime">Время работы</NavLink></li>
                                 <li className="menu-has-children"><a href="">Blog</a>
                                     <ul>
@@ -45,8 +39,7 @@ export class PageHeader extends React.Component{
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="pricing.html">Цены</a></li>
-                                <li><a href="contact.html">Контакты</a></li>
+                                <li><NavLink className="nav-link" to="/contacts">Контакты</NavLink></li>
                             </ul>
                         </nav>
                         <div className="menu-social-icons">

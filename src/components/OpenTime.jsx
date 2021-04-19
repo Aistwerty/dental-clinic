@@ -3,7 +3,7 @@ import React from 'react';
 export class OpenTime extends React.Component{
     render() {
         return(
-            <section className="open-hour-area">
+            <section className="open-hour-area openhour-page">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-12 open-hour-wrap">

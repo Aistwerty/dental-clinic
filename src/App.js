@@ -2,8 +2,12 @@ import React from 'react';
 import {Route,BrowserRouter} from 'react-router-dom';
 import {PageHeader} from "./components/PageHeader";
 import {PageFooter} from "./components/Footer";
-import {BannerArea} from "./components/BannerArea";
-import {OpenTime} from "./components/OpenTime";
+import {MainPage} from "./pagescomponents/MainPage";
+import {ContactsPage} from "./pagescomponents/ContactsPage";
+import {AboutUsPage} from "./pagescomponents/AboutUsPage";
+import {DentalServicesPage} from "./pagescomponents/DentalServicesPage";
+import {OpenTimePage} from "./pagescomponents/OpenTimePage";
+import {ElseServicesPage} from "./pagescomponents/ElseServicesPage";
 
 class App extends React.Component{
   render() {
@@ -11,8 +15,13 @@ class App extends React.Component{
         <div>
           <BrowserRouter>
             <PageHeader/>
-            <BannerArea/>
-            <Route path="/opentime" render={()=><OpenTime/>} />
+            <Route exact path="/" render={()=><MainPage/>} />
+            <Route exact path="/opentime" render={()=><OpenTimePage/>} />
+            <Route exact path="/contacts" render={()=><ContactsPage/>} />
+            <Route exact path="/aboutus" render={()=><AboutUsPage/>} />
+            <Route exact path="/dentalservice" render={()=><DentalServicesPage/>} />
+            <Route exact path="/elseservice" render={()=><ElseServicesPage/>} />
+             <div className="container py-5"></div>
             <PageFooter/>
           </BrowserRouter>
         </div>

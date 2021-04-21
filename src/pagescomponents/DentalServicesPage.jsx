@@ -1,23 +1,23 @@
 import React from "react";
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Route} from "react-router-dom";
 import {BannerArea} from "../components/BannerArea";
+import {ConsultService} from "../components/ConsultService";
+import {CosmeticDentalService} from "../components/CosmeticDentalService";
+import {CariesTreat} from "../components/CariesTreat";
+import {ToothProtez} from "../components/ToothProtez";
 
 export class DentalServicesPage extends React.Component{
     render() {
         return(
+            <div>
             <BrowserRouter>
                 <BannerArea/>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-3 d-flex flex-column">
-                            <h3>Меню</h3>
-                        </div>
-                        <div className="col-lg-9 d-flex flex-column">
-                            <h3>Вывод общей информации</h3>
-                        </div>
-                    </div>
-                </div>
+                <ConsultService/>
+                <CosmeticDentalService/>
+                <CariesTreat/>
+                <ToothProtez/>
             </BrowserRouter>
+           </div>
         )
     }
 }

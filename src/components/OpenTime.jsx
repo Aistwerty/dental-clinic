@@ -2,7 +2,7 @@ import React from 'react';
 
 export class OpenTime extends React.Component{
     render() {
-        return(
+        return <div>
             <section className="open-hour-area openhour-page">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -27,6 +27,6 @@ export class OpenTime extends React.Component{
                     </div>
                 </div>
             </section>
-        )
+        </div>
     }
 }

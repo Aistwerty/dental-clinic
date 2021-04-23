@@ -7,7 +7,7 @@ export class ConsultService extends React.Component{
         <div className="container py-5">
             <div className="row">
                 <div className="col-sm-4">
-                    <img src="../img/s1.jpg" height="100%" width="100%"/>
+                    <img src="../img/s1.jpg" height="100%" width="100%" alt=""/>
                 </div>
                 <div className="col-sm-8">
                 <h5>Консультация и плановый осмотр</h5>

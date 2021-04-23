@@ -15,7 +15,7 @@ export class CosmeticDentalService extends React.Component{
                         </p>
                     </div>
                     <div className="col-sm-4">
-                        <img src="../img/about-img.jpg" height="100%" width="100%"/>
+                        <img src="../img/about-img.jpg" height="100%" width="100%" alt=""/>
                     </div>
 
                 </div>

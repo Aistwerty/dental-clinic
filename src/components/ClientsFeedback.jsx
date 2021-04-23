@@ -51,7 +51,7 @@ export class ClientsFeedback extends React.Component{
                     </div>
                 </div>
                 <div className="row">
-                    <div className="active-testimonial-carusel owl-carousel owl-theme owl-loaded">
+                    <div className="active-testimonial-carusel">
                             {this.state.feedback}
                     </div>
                 </div>
@@ -62,3 +62,4 @@ export class ClientsFeedback extends React.Component{
         )
     }
 }
+

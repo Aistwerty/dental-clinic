@@ -5,10 +5,17 @@ import {BannerArea} from "../components/BannerArea";
 import {AddFeedback} from "../components/AddFeedback";
 
 export class FeedBackPage extends React.Component{
+    constructor() {
+        super();
+        this.state={
+            h1:"Отзывы"
+        }
+    }
+
     render() {
         return(
             <BrowserRouter>
-                <BannerArea/>
+                <BannerArea h1={this.state.h1}/>
                 <ClientsFeedback/>
                 <AddFeedback/>
             </BrowserRouter>

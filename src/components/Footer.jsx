@@ -20,8 +20,10 @@ export class PageFooter extends React.Component{
                         </div>
                         <div className="col-lg-6  col-md-12">
                             <div className="single-footer-widget newsletter">
-                                <h6></h6>
-                                <p></p>
+                                <h6>ООО "Стомадент"</h6>
+                                <p> ИНН	5920021730 <br/>
+                                    ОГРН 1055906280638 <br/>
+                                    КПП	592001001</p>
                             </div>
                         </div>
                         <div className="col-lg-4  col-md-6">

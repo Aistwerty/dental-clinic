@@ -8,13 +8,16 @@ import {ClientCallBack} from "../components/ClientCallBack";
 export class ContactsPage extends React.Component{
     constructor(props) {
         super(props);
+        this.state={
+            h1:"Контакты"
+        }
     }
 
 
     render() {
         return(
             <BrowserRouter>
-                <BannerArea/>
+                <BannerArea h1={this.state.h1}/>
                 <section className="contact-page-area">
                     <div className="container">
                         <MapYandex/>

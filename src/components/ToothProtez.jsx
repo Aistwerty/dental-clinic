@@ -15,7 +15,7 @@ export class ToothProtez extends React.Component{
                         </p>
                     </div>
                     <div className="col-sm-4">
-                        <img src="../img/s3.jpg" height="100%" width="100%"/>
+                        <img src="../img/s3.jpg" height="100%" width="100%" alt=""/>
                     </div>
 
                 </div>
